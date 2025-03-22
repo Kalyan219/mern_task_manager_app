@@ -11,7 +11,8 @@ const taskApis = require("./controllers/task")
 PORT = process.env.PORT || 1000
 app.use(express.json())
 app.use(cors({
-    origin:["http://localhost:5173"],
+    origin:"https://taskify-managing.netlify.app",
+    methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
 )

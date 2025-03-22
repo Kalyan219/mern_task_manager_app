@@ -19,7 +19,7 @@ const AddTask = ({setAddTaskDiv}) => {
         
         try {
           const res = await axios.post(
-            "http://localhost:1000/api/v1/addTask",
+            "https://mern-task-manager-app-eiby.onrender.com/api/v1/addTask",
             values,
             {withCredentials:true}
           );

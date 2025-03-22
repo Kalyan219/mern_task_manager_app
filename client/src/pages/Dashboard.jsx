@@ -18,7 +18,7 @@ const Dashboard = () => {
     const fetchUserDetails = async () => {
       try {
      
-        const res = await axios.get("http://localhost:1000/api/v1/userDetails",{
+        const res = await axios.get("https://mern-task-manager-app-eiby.onrender.com/api/v1/userDetails",{
             withCredentials:true,
           })
           console.log(res.data)

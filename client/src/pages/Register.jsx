@@ -15,7 +15,7 @@ const Register = () => {
     const register = async (e) => {
         e.preventDefault()
         try {
-           const response = await axios.post("http://localhost:1000/api/v1/register", Values)
+           const response = await axios.post("https://mern-task-manager-app-eiby.onrender.com/api/v1/register", Values)
            console.log("Registration Success:", response.data);
            alert(response.data.success)
            navigate("/login")

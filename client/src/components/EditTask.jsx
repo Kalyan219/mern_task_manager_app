@@ -18,7 +18,7 @@ const EditTask = ({setEditTaskDiv, editTaskId}) => {
     const fetch = async () => {
         try {
             const res = await axios.get(
-                `http://localhost:1000/api/v1/getTask/${editTaskId}`,
+                `https://mern-task-manager-app-eiby.onrender.com/api/v1/getTask/${editTaskId}`,
                 {
                     withCredentials:true,
                 }
@@ -36,7 +36,7 @@ const EditTask = ({setEditTaskDiv, editTaskId}) => {
 
     try {
         const res = await axios.put(
-          `http://localhost:1000/api/v1/editTask/${id}`,
+          `https://mern-task-manager-app-eiby.onrender.com/api/v1/editTask/${id}`,
           values,
           { withCredentials: true }
         );
@@ -56,7 +56,7 @@ const EditTask = ({setEditTaskDiv, editTaskId}) => {
 
     try {
         const res = await axios.delete(
-          `http://localhost:1000/api/v1/deleteTask/${id}`,
+          `https://mern-task-manager-app-eiby.onrender.com/api/v1/deleteTask/${id}`,
           { withCredentials: true }
         );
         console.log(res.data);

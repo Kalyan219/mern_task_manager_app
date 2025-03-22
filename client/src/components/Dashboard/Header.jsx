@@ -8,7 +8,7 @@ const Header = ({setAddTaskDiv}) => {
   const handleLogout = async () => {
      try {
       const res = await axios.post(
-        "http://localhost:1000/api/v1/logout",
+        "https://mern-task-manager-app-eiby.onrender.com/api/v1/logout",
         {},
         {withCredentials:true}
       );
